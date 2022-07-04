@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+
+    <title>danonino.mb ツ</title>
+</head>
+<body>
+    <div class="terminal">
+        <div class="top">
+            <div class="btn close"></div>
+            <div class="btn minimize"></div>
+            <div class="btn maximize"></div>
+        </div>
+        <div class="content">
+            <pre class="code-default" style="line-height: 125%"><span class="code-keys" style="font-weight: bold">function</span> <span class="code-function">createDanonino</span><span class="code-bracket">(</span><span class="code-var">mood</span><span class="code-bracket">)</span> <span class="code-object">{</span>
+    <span class="code-keys" style="font-weight: bold">var</span> <span class="code-var">danonino</span> = <span class="code-keys" style="font-weight: bold">new</span> <span class="code-function">Person</span><span class="code-bracket">()</span>;
+
+    <span class="code-var">danonino</span>.<span class="code-function">setName</span><span class="code-bracket">(</span><span class="code-string">&quot;Dani B.&quot;</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">setBio</span><span class="code-bracket">(</span><span class="code-string">&quot;dev @seesonss, dev @Peereira7 mod @ Team Heretics&quot;</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">setNicks</span><span class="code-bracket">(</span><span class="code-object">[</span><span class="code-string">&quot;danonino&quot;</span>,</span> <span class="code-string">&quot;dani&quot;</span>, <span class="code-string">&quot;daniel&quot;</span><span class="code-object">]</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">setLocation</span><span class="code-bracket">(</span><span class="code-string">&quot;Galicia, Spain&quot;</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">setMood</span><span class="code-bracket">(</span><span class="code-var">mood</span><span class="code-bracket">)</span>;
+
+    <span class="code-comment">/* working on... */</span>
+    <span class="code-var">danonino</span>.<span class="code-function">addJob</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">name</span>: <span class="code-string">&quot;Peereira7&quot;</span>, <span class="code-var">role</span>: <span class="code-string">&quot;dev&quot;</span>, <span class="code-var">link</span>: <a href="https://discord.gg/peereira7" class="code-string">&quot;https://discord.gg/peereira7&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">addJob</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">name</span>: <span class="code-string">&quot;Mostopapi&quot;</span>, <span class="code-var">role</span>: <span class="code-string">&quot;mod&quot;</span>, <span class="code-var">link</span>: <a href="https://discord.gg/HYYPC3jXNW" class="code-string">&quot;https://discord.gg/mostopapi&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">addJob</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">name</span>: <span class="code-string">&quot;Team Heretics&quot;</span>, <span class="code-var">role</span>: <span class="code-string">&quot;mod&quot;</span>, <span class="code-var">link</span>: <a href="https://discord.gg/teamheretics" class="code-string">&quot;https://discord.gg/teamheretics&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">addJob</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">name</span>: <span class="code-string">&quot;seesonss&quot;</span>, <span class="code-var">role</span>: <span class="code-string">&quot;dev&quot;</span>, <span class="code-var">link</span>: <a href="https://discord.gg/SWgZYUdfqA" class="code-string">&quot;https://discord.gg/seesonss&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">addJob</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">name</span>: <span class="code-string">&quot;danoninomb.es&quot;</span>, <span class="code-var">role</span>: <span class="code-string">&quot;dev&quot;</span>, <span class="code-var">link</span>: <a href="https://danoninomb.es" class="code-string">&quot;https://danoninomb.es&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    
+
+    <span class="code-comment">/* social media */</span>
+    <span class="code-var">danonino</span>.<span class="code-function">addSocial</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">type</span>: <span class="code-string">&quot;twitter&quot;</span>, <span class="code-var">link</span>: <a href="https://twitter.com/danonino_mb" class="code-string">&quot;https://twitter.com/danonino_mb&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">addSocial</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">type</span>: <span class="code-string">&quot;discord&quot;</span>, <span class="code-var">link</span>: <a href="https://discord.com/users/627150888653553665" class="code-string">&quot;https://discord.gg/user/danonino.mb ツ&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">addSocial</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">type</span>: <span class="code-string">&quot;instagram&quot;</span>, <span class="code-var">link</span>: <a href="https://instagram.com/danonino.mb" class="code-string">&quot;https://instagram.com/danonino.mb&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+    <span class="code-var">danonino</span>.<span class="code-function">addSocial</span><span class="code-bracket">(</span><span class="code-object">{</span> <span class="code-var">type</span>: <span class="code-string">&quot;github&quot;</span>, <span class="code-var">link</span>: <a href="https://github.com/danonino-mb" class="code-string">&quot;https://github.com/danonino-mb&quot;</a> <span class="code-object">}</span><span class="code-bracket">)</span>;
+<span class="code-object">}</span>
+            </pre>
+        </div>
+    </div>
+</body>
+</html>
