@@ -12,7 +12,7 @@ body {
 }
 
 .terminal {
-    width: clamp(10rem, 80vw, 51rem);
+    width: clamp(10rem, 80vw, 52rem);
     height: 30rem;
     
     position: absolute;
