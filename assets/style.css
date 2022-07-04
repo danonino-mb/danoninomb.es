@@ -1,9 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-
     background: #1a1a1a;
-
     color: white;
     font-size: .9rem;
     font-family: Consolas, "Courier New";
@@ -14,8 +12,8 @@ body {
 }
 
 .terminal {
-    width: 55vw;
-    height: 60vh;
+    width: clamp(10rem, 80vw, 52rem);
+    height: 30rem;
     
     position: absolute;
     top: 50%;
@@ -24,13 +22,15 @@ body {
 
     background-color: #131313;
     border-radius: var(--terminal-radius);
+    overflow: auto hidden;
 }
 
 .top {
     width: 100%;
     height: 5%;
 
-    position: relative;
+    position: sticky;
+    left: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -62,16 +62,13 @@ body {
 .content {
     width: 100%;
     height: 95%;
-    position: absolute;
 }
 
 .content pre {
     margin: 0;
     text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 1rem;
+    line-height: 125%;
 }
 
 .code-default { color: #d0d0d0; }
